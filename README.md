@@ -1,3 +1,1 @@
-These files are compiled dot templates from dot folder.
-
-Do NOT edit them directly, edit the templates and run `npm run build` from main ajv folder.
+![Hexo Blog CI](https://github.com/doiyes/doiyes.github.io/workflows/Hexo%20Blog%20CI/badge.svg)
