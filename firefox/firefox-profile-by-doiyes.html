@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://doiyes.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="下载安装官方FTP：http:&#x2F;&#x2F;ftp.mozilla.org&#x2F;pub&#x2F;firefox&#x2F; 官网：https:&#x2F;&#x2F;www.mozilla.org&#x2F;en-US&#x2F;firefox&#x2F;all&#x2F; 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。 配置文件常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数）： -ProfileManag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Firefox配置文件自用收集整理">
+<meta property="og:url" content="http://doiyes.com/firefox/firefox-profile-by-doiyes.html">
+<meta property="og:site_name" content="曲豆先生">
+<meta property="og:description" content="下载安装官方FTP：http:&#x2F;&#x2F;ftp.mozilla.org&#x2F;pub&#x2F;firefox&#x2F; 官网：https:&#x2F;&#x2F;www.mozilla.org&#x2F;en-US&#x2F;firefox&#x2F;all&#x2F; 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。 配置文件常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数）： -ProfileManag">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-14T05:37:00.000Z">
+<meta property="article:modified_time" content="2020-03-28T01:47:40.225Z">
+<meta property="article:author" content="曲豆先生">
+<meta property="article:tag" content="Firefox">
+<meta property="article:tag" content="uc脚本">
+<meta property="article:tag" content="配置文件">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://doiyes.com/firefox/firefox-profile-by-doiyes.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Firefox配置文件自用收集整理 | 曲豆先生</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="曲豆先生" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">曲豆先生</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">曲豆先生的点滴记录</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-网址导航">
+
+    <a href="http://doiyes.com/1024/" rel="section"><i class="fa fa-fw fa-globe"></i>网址导航</a>
+
+  </li>
+        <li class="menu-item menu-item-火狐定制">
+
+    <a href="/categories/firfox" rel="section"><i class="fa fa-fw fa-firefox"></i>火狐定制</a>
+
+  </li>
+        <li class="menu-item menu-item-github">
+
+    <a href="/categories/GitHub" rel="section"><i class="fa fa-fw fa-github"></i>GitHub</a>
+
+  </li>
+        <li class="menu-item menu-item-软件神器">
+
+    <a href="/categories/software" rel="section"><i class="fa fa-fw fa-thumbs-up"></i>软件神器</a>
+
+  </li>
+        <li class="menu-item menu-item-好物推荐">
+
+    <a href="/categories/smzdm" rel="section"><i class="fa fa-fw fa-star"></i>好物推荐</a>
+
+  </li>
+        <li class="menu-item menu-item-资源分享">
+
+    <a href="/categories/share" rel="section"><i class="fa fa-fw fa-film"></i>资源分享</a>
+
+  </li>
+        <li class="menu-item menu-item-闲言碎语">
+
+    <a href="/categories/other" rel="section"><i class="fa fa-fw fa-comments"></i>闲言碎语</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://doiyes.com/firefox/firefox-profile-by-doiyes.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="曲豆先生">
+      <meta itemprop="description" content="但行好事，莫问前程">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曲豆先生">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Firefox配置文件自用收集整理
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-14 13:37:00" itemprop="dateCreated datePublished" datetime="2020-02-14T13:37:00+08:00">2020-02-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-28 09:47:40" itemprop="dateModified" datetime="2020-03-28T09:47:40+08:00">2020-03-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/firefox/" itemprop="url" rel="index">
+                    <span itemprop="name">firefox</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h1><p>官方FTP：<a href="http://ftp.mozilla.org/pub/firefox/" target="_blank" rel="noopener">http://ftp.mozilla.org/pub/firefox/</a></p>
+<p>官网：<a href="https://www.mozilla.org/en-US/firefox/all/" target="_blank" rel="noopener">https://www.mozilla.org/en-US/firefox/all/</a></p>
+<p>解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。</p>
+<h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数）：</p>
+<p><strong>-ProfileManager</strong> 或 <strong>-P</strong> – 打开内置的配置管理器界面。</p>
+<p>-<strong>P “配置名”</strong> – 使用自定义名称的配置来启动 Firefox。如果这个配置名不存在，则打开配置管理器。如果有其他 Firefox 实例正在运行，则该参数无法生效。</p>
+<p><strong>-no-remote</strong> – 在 -P 后面添加这个参数，可以创建一个新的实例，实现同时使用多个Firefox 配置。如：</p>
+<p>“D:\Program File\Firefox\firefox.exe” -p</p>
+<p>“D:\Program File\Firefox\firefox.exe” –no-remote -profile “doiyes”</p>
+<p><strong>-private</strong> – 始终在隐私浏览模式启动 Firefox。</p>
+<p><strong>-safe-mode</strong> – 安全模式启动 Firefox，或者按住 Shift 键打开 Firefox 也可以。 </p>
+<a id="more"></a>
+<p>更多可见：<a href="https://www.firefox.net.cn/read-54673" target="_blank" rel="noopener">https://www.firefox.net.cn/read-54673</a></p>
+<h1 id="about-config-常用设置"><a href="#about-config-常用设置" class="headerlink" title="about:config 常用设置"></a>about:config 常用设置</h1><p>地址栏输入about:config ，打开；搜索——</p>
+<p>新标签页后台运行<br> browser.tabs.loadInBackground<br> browser.tabs.loadDivertedInBackground<br> browser.tabs.loadBookmarksInBackground<br> 全部设为true</p>
+<p>书签在新标签页中打开<br> browser.tabs.loadBookmarksInTabs，默认为 false，双击改为true 即可在新建标签页打开。</p>
+<p>搜索栏搜索在新标签页打开<br> browser.search.openintab  双击改为true</p>
+<p>关闭最后一个标签页后不关闭窗口<br> browser.tabs.closeWindowWithLastTab  双击改为true</p>
+<p>查找自動高亮<br> findbar.modalHighlight   双击改为true<br> findbar.highlightAll         双击改为true</p>
+<p>自定义标签页宽度（默认 76）<br> browser.tabs.tabMinWidth</p>
+<p>在mozilla页面激活WebExtensions<br> 方法：about:config–新建布尔参数：privacy.resistFingerprinting.block_mozAddonManager 设置为 true</p>
+<p>security.dialog_enable_delay  将其值设置为0  扩展安装等待时间 （默认1000）<br> dom.event.contextmenu.enabled  双击改为false 破解右键限制</p>
+<p>更多可见：<a href="https://www.firefox.net.cn/read-60535" target="_blank" rel="noopener">https://www.firefox.net.cn/read-60535</a></p>
+<h1 id="user-js常用设置"><a href="#user-js常用设置" class="headerlink" title="user.js常用设置"></a>user.js常用设置</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">user_pref(<span class="string">"browser.urlbar.trimURLs"</span>, <span class="literal">false</span>);   <span class="comment">//隐藏地址栏 http://前缀？NO</span></span><br><span class="line"></span><br><span class="line">user_pref(<span class="string">"browser.link.open_newwindow.restriction"</span>, <span class="number">0</span>);<span class="comment">//新标签页打开链接,而不是窗口</span></span><br><span class="line">user_pref(<span class="string">"browser.search.openintab"</span>, <span class="literal">true</span>);<span class="comment">//搜索栏在新标签页打开</span></span><br><span class="line">user_pref(<span class="string">"browser.urlbar.openintab"</span>, <span class="literal">true</span>);<span class="comment">//地址栏在新标签页打开</span></span><br><span class="line">user_pref(<span class="string">"browser.tabs.loadBookmarksInTabs"</span>, <span class="literal">true</span>);<span class="comment">//书签栏在新标签页打开</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_pref(<span class="string">"browser.tabs.loadInBackground"</span>, <span class="literal">true</span>);<span class="comment">//中键点击链接后台打开</span></span><br><span class="line"><span class="comment">//user_pref("browser.search.context.loadInBackground", true);//搜索栏在后台打开</span></span><br><span class="line"><span class="comment">//user_pref("browser.tabs.loadBookmarksInBackground", true);//书签在后台打开</span></span><br><span class="line"><span class="comment">//user_pref("browser.tabs.loadDivertedInBackground", true);//外部链接后台打开</span></span><br><span class="line"></span><br><span class="line">user_pref(<span class="string">"browser.cache.disk.parent_directory"</span>,<span class="string">"C:\\TEMP"</span>);<span class="comment">//缓存位置位于该处制定目录下的cache文件夹内</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//密码</span></span><br><span class="line">user_pref(<span class="string">"signon.autofillForms"</span>, <span class="literal">true</span>);  <span class="comment">//自动填写登录表单？</span></span><br><span class="line">user_pref(<span class="string">"signon.rememberSignons"</span>, <span class="literal">true</span>);  <span class="comment">//记录网站登录密码</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//可以解决某些网站密码不存不了的情况……</span></span><br><span class="line">user_pref(<span class="string">"signon.importedFromSqlite"</span>, <span class="literal">true</span>);</span><br><span class="line">user_pref(<span class="string">"signon.overrideAutocomplete"</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//extensions</span></span><br><span class="line">user_pref(<span class="string">"security.dialog_enable_delay"</span>, <span class="number">0</span>); <span class="comment">//按装扩展无延时</span></span><br><span class="line"></span><br><span class="line">pref(<span class="string">"browser.bookmarks.max_backups"</span>, <span class="number">1</span>);<span class="comment">//书签备份</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//禁止生成略缩图</span></span><br><span class="line">user_pref(<span class="string">"browser.pagethumbnails.capturing_disabled"</span>, <span class="literal">true</span>);</span><br><span class="line">user_pref(<span class="string">"browser.newtabpage.enabled"</span>, <span class="literal">true</span>);</span><br><span class="line">user_pref(<span class="string">"pageThumbs.enabled"</span>, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
+
+<h1 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h1><p>uBlock Origin：一款高效的请求过滤工具，不只是一个广告拦截工具。扩展地址：<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener">https://github.com/gorhill/uBlock</a></p>
+<p>暴力猴(Violentmonkey )：开源的脚本管理扩展，扩展地址：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/。脚本库：https://greasyfork.org/" target="_blank" rel="noopener">https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/。脚本库：https://greasyfork.org/</a></p>
+<p>Stylus：一个用户样式管理器，帮助您重新定义网页样式，扩展地址：<a href="https://github.com/openstyles/stylus" target="_blank" rel="noopener">https://github.com/openstyles/stylus</a></p>
+<p>闪耀拖拽：兼容多进程的Firefox拖拽扩展，扩展地址：<a href="https://github.com/harytfw/GlitterDrag" target="_blank" rel="noopener">https://github.com/harytfw/GlitterDrag</a></p>
+<p>Header Editor：管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求，扩展地址：<a href="https://github.com/FirefoxBar/HeaderEditor" target="_blank" rel="noopener">https://github.com/FirefoxBar/HeaderEditor</a> 规则：<a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" target="_blank" rel="noopener">https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor</a> 来源：<a href="https://bbs.kafan.cn/thread-2102524-1-1.html" target="_blank" rel="noopener">https://bbs.kafan.cn/thread-2102524-1-1.html</a></p>
+<p>Proxy SwitchyOmega：代理设置，扩展地址：<a href="https://github.com/FelisCatus/SwitchyOmega" target="_blank" rel="noopener">https://github.com/FelisCatus/SwitchyOmega</a></p>
+<p>Open Tabs Next To Current：Open new tabs to the right of the current one，扩展地址：<a href="https://github.com/sblask/webextension-open-tabs-next-to-current" target="_blank" rel="noopener">https://github.com/sblask/webextension-open-tabs-next-to-current</a></p>
+<p>Youku-HTML5-Player：一个适配优酷的简单易用的HTML5播放器（已停止维护），扩展地址：<a href="https://github.com/esterTion/Youku-HTML5-Player" target="_blank" rel="noopener">https://github.com/esterTion/Youku-HTML5-Player</a></p>
+<p>备用：</p>
+<p>Gesturefy：鼠标手势扩展，扩展地址：<a href="https://github.com/Robbendebiene/Gesturefy" target="_blank" rel="noopener">https://github.com/Robbendebiene/Gesturefy</a></p>
+<h1 id="常用用户脚本（UserScript）"><a href="#常用用户脚本（UserScript）" class="headerlink" title="常用用户脚本（UserScript）"></a>常用用户脚本（UserScript）</h1><p>视频网HTML5播放小工具：<a href="https://greasyfork.org/zh-CN/scripts/30545" target="_blank" rel="noopener">https://greasyfork.org/zh-CN/scripts/30545</a></p>
+<p>iqiyi-player-switch：爱奇艺flash播放器与html5播放器切换 <a href="https://github.com/gooyie/userscript-iqiyi-player-switch" target="_blank" rel="noopener">https://github.com/gooyie/userscript-iqiyi-player-switch</a></p>
+<p>Super_preloaderPlus_one_New：网页自动翻页  <a href="https://github.com/machsix/Super-preloader" target="_blank" rel="noopener">https://github.com/machsix/Super-preloader</a></p>
+<p>anti-redirect：去除各搜索引擎/常用网站的重定向 <a href="https://github.com/axetroy/anti-redirect" target="_blank" rel="noopener">https://github.com/axetroy/anti-redirect</a></p>
+<p>拒绝二维码登录：<a href="https://greasyfork.org/zh-CN/scripts/37988" target="_blank" rel="noopener">https://greasyfork.org/zh-CN/scripts/37988</a></p>
+<p>再见了百家号：<a href="https://greasyfork.org/zh-CN/scripts/377144" target="_blank" rel="noopener">https://greasyfork.org/zh-CN/scripts/377144</a></p>
+<p>Jump to Top/Bottom of page with hotkeys：为网页增加向页尾、页首的按钮及快捷键  <a href="https://greasyfork.org/zh-CN/scripts/794-jump-to-top-bottom-of-page-with-hotkeys" target="_blank" rel="noopener">https://greasyfork.org/zh-CN/scripts/794-jump-to-top-bottom-of-page-with-hotkeys</a></p>
+<p>searchEngineJump：搜索引擎跳转脚本 <a href="https://github.com/qxinGitHub/searchEngineJump" target="_blank" rel="noopener">https://github.com/qxinGitHub/searchEngineJump</a></p>
+<p>Picviewer CE+：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 <a href="https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce" target="_blank" rel="noopener">https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce</a></p>
+<p>网盘自动填写密码：<a href="https://greasyfork.org/zh-CN/scripts/29762" target="_blank" rel="noopener">https://greasyfork.org/zh-CN/scripts/29762</a></p>
+<p>Search Jump Around：自用 <a href="https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js" target="_blank" rel="noopener">https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js</a></p>
+<h1 id="UC脚本-UserChormeJS"><a href="#UC脚本-UserChormeJS" class="headerlink" title="UC脚本(UserChormeJS)"></a>UC脚本(UserChormeJS)</h1><h2 id="使用方法："><a href="#使用方法：" class="headerlink" title="使用方法："></a>使用方法：</h2><p><a href="https://github.com/Endor8/userChrome.js/tree/master/userChrome" target="_blank" rel="noopener">https://github.com/Endor8/userChrome.js/tree/master/userChrome</a></p>
+<p>config.js  和userChromeJS.js放在Firefox安装根目录下；</p>
+<p> config-prefs.js放在 Firefox 安装根目录\defaults\pref下；</p>
+<p>UserChrome.js 放在配置文件夹\chrome下，UC 脚本放入 chrome 文件夹。 </p>
+<p>注：FF62之后版本需要在 config-pref.js 加上下面的代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pref(&quot;general.config.sandbox_enabled&quot;, false);</span><br></pre></td></tr></table></figure>
+
+<h2 id="自用UC脚本："><a href="#自用UC脚本：" class="headerlink" title="自用UC脚本："></a>自用UC脚本：</h2><p><a href="https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS" target="_blank" rel="noopener">https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS</a></p>
+<p>鼠标放在标签栏自动滚动切换.uc.js ——标签栏鼠标悬停切换</p>
+<p>AutoPopup.uc.js   ——按钮菜单自动弹出</p>
+<p>ClearSearchTerm 1.0.uc.js  ——搜索框自动清空</p>
+<p>LoadingBar.uc.js  ——地址栏下方显示当前页面加载进度条</p>
+<p>MemoryMonitor.uc.js ——内存监控</p>
+<p>DoubleClick-CloseTab.uc.js ——双击关闭标签</p>
+<p>downloadPlus.uc.js ——下载增强</p>
+<p>EnableAutoLogin.ucjs ——自动登录增强</p>
+<p>OpenNewTab.uc.js ——地址栏输入在新标签打开</p>
+<h1 id="CSS相关"><a href="#CSS相关" class="headerlink" title="CSS相关"></a>CSS相关</h1><p><a href="https://github.com/doiyes/Firefox-Custom/tree/master/CSS" target="_blank" rel="noopener">https://github.com/doiyes/Firefox-Custom/tree/master/CSS</a></p>
+<p>书签栏自动隐藏</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="Firefox-启用-“自带”-翻译-（Yandex-提供）"><a href="#Firefox-启用-“自带”-翻译-（Yandex-提供）" class="headerlink" title="Firefox 启用 “自带” 翻译 （Yandex 提供）"></a><a href="https://bbs.kafan.cn/thread-2109497-1-1.html" target="_blank" rel="noopener">Firefox 启用 “自带” 翻译 （Yandex 提供）</a></h2><p>进入：about:config ，没有的首选项的新建，有的话更改值。<br>KEY 申请地址， <a href="https://tech.yandex.com/keys/get/?service=trnsl" target="_blank" rel="noopener">https://tech.yandex.com/keys/get/?service=trnsl</a> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">browser</span><span class="selector-class">.translation</span><span class="selector-class">.engine</span>  <span class="selector-tag">Yandex</span>  </span><br><span class="line"><span class="selector-tag">browser</span><span class="selector-class">.translation</span><span class="selector-class">.detectLanguage</span>   <span class="selector-tag">true</span>  </span><br><span class="line"><span class="selector-tag">browser</span><span class="selector-class">.translation</span><span class="selector-class">.ui</span><span class="selector-class">.show</span>    <span class="selector-tag">true</span>  </span><br><span class="line"><span class="selector-tag">browser</span><span class="selector-class">.translation</span><span class="selector-class">.ui</span><span class="selector-class">.welcomeMessageShown</span>   <span class="selector-tag">true</span>  </span><br><span class="line"><span class="selector-tag">browser</span><span class="selector-class">.translation</span><span class="selector-class">.yandex</span><span class="selector-class">.apiKeyOverride</span>    自己申请 <span class="selector-tag">KEY</span></span><br></pre></td></tr></table></figure>
+
+<p>完成后，重启浏览器。</p>
+<h2 id="Firefox-在部分网站上不提示保存密码的解决方法"><a href="#Firefox-在部分网站上不提示保存密码的解决方法" class="headerlink" title="Firefox 在部分网站上不提示保存密码的解决方法"></a><a href="https://bbs.kafan.cn/thread-2114354-1-1.html" target="_blank" rel="noopener">Firefox 在部分网站上不提示保存密码的解决方法</a></h2><p>像是mail.163.com，输入完用户名、密码并提交表单后，firefox不会提示保存密码<br>将表单从ajax提交改为form提交即可，方法是：</p>
+<p>1、鼠标移至登录按钮上，右键，“查看元素”，源代码是</p>
+<pre><code>&lt;a href=&quot;javascript:void(0);&quot; id=&quot;dologin&quot; data-action=&quot;dologin&quot; class=&quot;u-loginbtn btncolor tabfocus btndisabled&quot; tabindex=&quot;8&quot;&gt;登  录&lt;/a&gt;</code></pre><p>复制代码<br>将标签从a改为input并添加type=”submit”属性，即改为</p>
+<pre><code>&lt;input href=&quot;javascript:void(0);&quot; id=&quot;dologin&quot; data-action=&quot;dologin&quot; class=&quot;u-loginbtn btncolor tabfocus btndisabled&quot; tabindex=&quot;8&quot; type=&quot;submit&quot;&gt;登  录&lt;/input&gt;</code></pre><p>复制代码<br>2、现在可以正常输入用户名、密码，点击登录按钮后，firefox会提示保存用户名密码</p>
+<h2 id="FF-内置翻译功能增强脚本"><a href="#FF-内置翻译功能增强脚本" class="headerlink" title="FF 内置翻译功能增强脚本"></a><a href="https://www.firefox.net.cn/read-121267" target="_blank" rel="noopener">FF 内置翻译功能增强脚本</a></h2><p>如何开启内置翻译？<br>在 about:config 中<br>设置 browser.translation.detectLanguage 为 true，<br>设置 browser.translation.ui.show 为 true，</p>
+<p>如果你有 Yandex 翻译的 apiKey<br>在 about:config 中新建字符串类型名称为<br>browser.translation.yandex.apiKeyOverride<br>的设置项，值为你申请得到的 Yandex 翻译的 apiKey<br>使用该翻译引擎时将 browser.translation.engine 的值改为 Yandex（首字母必须大写）<br>免费申请 Yandex 翻译  apiKey 的地址为 <a href="https://tech.yandex.com/keys/get/?service=trnsl" target="_blank" rel="noopener">https://tech.yandex.com/keys/get/?service=trnsl</a></p>
+<p>Google 翻译的新建字符串类型名称为<br>browser.translation.google.apiKey<br>的设置项，值为你申请得到的 Google 翻译的 apiKey<br>使用该翻译引擎时将 browser.translation.engine 的值改为 Google（首字母必须大写，此为默认值）<br>由于 Google 翻译 apiKey 为收费的，就不介绍如何申请了。<br>小声地提醒一下，Google 翻译的 apiKey 可以在 github 白嫖别人代码中泄漏的，为了防止被滥用关键字自己琢磨一下吧。</p>
+<p>Bing 翻译的分别新建字符串类型名称为<br>browser.translation.bing.apiKeyOverride<br>browser.translation.bing.clientIdOverride<br>的设置项，值为你申请得到的 Bing 翻译的 apiKey 和 clientId<br>使用该翻译引擎时将 browser.translation.engine 的值改为 Bing（首字母必须大写）<br>由于 Bing 提供的 API 好像挂了，同样不介绍如何申请。</p>
+<p>像Chrome一样弹出Google翻译工具栏的扩展Google Translate This：<a href="https://github.com/andreicristianpetcu/google_translate_this" target="_blank" rel="noopener">https://github.com/andreicristianpetcu/google_translate_this</a></p>
+<h2 id="全局雅黑字体"><a href="#全局雅黑字体" class="headerlink" title="全局雅黑字体"></a><a href="https://bbs.kafan.cn/thread-1681393-1-1.html" target="_blank" rel="noopener">全局雅黑字体</a></h2>
+    </div>
+
+    
+    
+    
+      
+
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="曲豆先生 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="曲豆先生 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>曲豆先生
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://doiyes.com/firefox/firefox-profile-by-doiyes.html" title="Firefox配置文件自用收集整理">http://doiyes.com/firefox/firefox-profile-by-doiyes.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Firefox/" rel="tag"># Firefox</a>
+              <a href="/tags/uc%E8%84%9A%E6%9C%AC/" rel="tag"># uc脚本</a>
+              <a href="/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" rel="tag"># 配置文件</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/other/readinglist.html" rel="prev" title="读书记录">
+      <i class="fa fa-chevron-left"></i> 读书记录
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/GitHub/setup-Hexo-and-deploy-to-GitHub-with-GitHub-actions.html" rel="next" title="代码小白在Github使用Hexo搭建个人网站实录">
+      代码小白在Github使用Hexo搭建个人网站实录 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载安装"><span class="nav-number">1.</span> <span class="nav-text">下载安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置文件"><span class="nav-number">2.</span> <span class="nav-text">配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#about-config-常用设置"><span class="nav-number">3.</span> <span class="nav-text">about:config 常用设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#user-js常用设置"><span class="nav-number">4.</span> <span class="nav-text">user.js常用设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#扩展"><span class="nav-number">5.</span> <span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用用户脚本（UserScript）"><span class="nav-number">6.</span> <span class="nav-text">常用用户脚本（UserScript）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#UC脚本-UserChormeJS"><span class="nav-number">7.</span> <span class="nav-text">UC脚本(UserChormeJS)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方法："><span class="nav-number">7.1.</span> <span class="nav-text">使用方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自用UC脚本："><span class="nav-number">7.2.</span> <span class="nav-text">自用UC脚本：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS相关"><span class="nav-number">8.</span> <span class="nav-text">CSS相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">9.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Firefox-启用-“自带”-翻译-（Yandex-提供）"><span class="nav-number">9.1.</span> <span class="nav-text">Firefox 启用 “自带” 翻译 （Yandex 提供）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Firefox-在部分网站上不提示保存密码的解决方法"><span class="nav-number">9.2.</span> <span class="nav-text">Firefox 在部分网站上不提示保存密码的解决方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FF-内置翻译功能增强脚本"><span class="nav-number">9.3.</span> <span class="nav-text">FF 内置翻译功能增强脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全局雅黑字体"><span class="nav-number">9.4.</span> <span class="nav-text">全局雅黑字体</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="曲豆先生"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">曲豆先生</p>
+  <div class="site-description" itemprop="description">但行好事，莫问前程</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/doiyes" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;doiyes" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/shinco20" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;shinco20" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">曲豆先生</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">16k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">15 分钟</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.getAttribute('pjax') !== null) {
+      script.setAttribute('pjax', '');
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: 'c16853bb16fe098cfd42',
+      clientSecret: '9679d134dd0c984bb111c7d1dc4e6b3454287f19',
+      repo: 'doiyes.github.io',
+      owner: 'doiyes',
+      admin: ['doiyes'],
+      id: '4c9e821cb43b8dbd9abe338057865a8c',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+    </div>
+</body>
+</html>
