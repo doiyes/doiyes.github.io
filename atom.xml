@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>曲豆先生</title>
+  <icon>http://doiyes.com/icon.png</icon>
+  <subtitle>曲豆先生的点滴记录</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://doiyes.com/"/>
+  <updated>2023-06-30T05:32:00.000Z</updated>
+  <id>http://doiyes.com/</id>
+  
+  <author>
+    <name>曲豆先生</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>资源分享之锵锵</title>
+    <link href="http://doiyes.com/share-list"/>
+    <id>http://doiyes.com/share-list</id>
+    <published>2023-03-22T05:37:00.000Z</published>
+    <updated>2023-06-30T05:32:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;锵锵三人行视频&quot;&gt;&lt;a href=&quot;#锵锵三人行视频&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="资源分享" scheme="http://doiyes.com/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="锵锵三人行" scheme="http://doiyes.com/tags/%E9%94%B5%E9%94%B5%E4%B8%89%E4%BA%BA%E8%A1%8C/"/>
+    
+      <category term="窦文涛" scheme="http://doiyes.com/tags/%E7%AA%A6%E6%96%87%E6%B6%9B/"/>
+    
+      <category term="锵锵行天下" scheme="http://doiyes.com/tags/%E9%94%B5%E9%94%B5%E8%A1%8C%E5%A4%A9%E4%B8%8B/"/>
+    
+      <category term="圆桌派" scheme="http://doiyes.com/tags/%E5%9C%86%E6%A1%8C%E6%B4%BE/"/>
+    
+      <category term="一路书香" scheme="http://doiyes.com/tags/%E4%B8%80%E8%B7%AF%E4%B9%A6%E9%A6%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的关注列表</title>
+    <link href="http://doiyes.com/follow-list"/>
+    <id>http://doiyes.com/follow-list</id>
+    <published>2022-09-12T05:37:00.000Z</published>
+    <updated>2025-08-25T00:28:52.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;张捷–谁是谁非任评说&quot;&gt;&lt;a href=&quot;#张捷–谁是谁非任评说&quot; class=&quot;headerlink&quot; title=&quot;张捷–谁是谁非任评说&quot;&gt;&lt;/a&gt;张捷–谁是谁非任评说&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;微博：&lt;a href=&quot;https://weibo.com/u/1237389341&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://weibo.com/u/1237389341&lt;/a&gt; &lt;a href=&quot;https://weibo.com/u/1496880177&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://weibo.com/u/1496880177&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;B站：&lt;a href=&quot;https://space.bilibili.com/1955809864/dynamic&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://space.bilibili.com/1955809864/dynamic&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;头条：&lt;a href=&quot;https://www.toutiao.com/c/user/token/MS4wLjABAAAACHbKCHGKM0-LfuCzdFEpkUPeAbWw5avDyJR90TfwtZU/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.toutiao.com/c/user/token/MS4wLjABAAAACHbKCHGKM0-LfuCzdFEpkUPeAbWw5avDyJR90TfwtZU/&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="资源分享" scheme="http://doiyes.com/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="关注列表" scheme="http://doiyes.com/tags/%E5%85%B3%E6%B3%A8%E5%88%97%E8%A1%A8/"/>
+    
+      <category term="公众号" scheme="http://doiyes.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
+    
+      <category term="网络大V" scheme="http://doiyes.com/tags/%E7%BD%91%E7%BB%9C%E5%A4%A7V/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人收集自用的精选程序列表</title>
+    <link href="http://doiyes.com/Software-Favorite"/>
+    <id>http://doiyes.com/Software-Favorite</id>
+    <published>2022-06-12T05:32:00.000Z</published>
+    <updated>2025-08-25T00:28:52.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;个人多年使用收集的的优质精选的程序列表。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;按名称排序，待整理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#Windows程序&quot;&gt;Windows程序&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#日常应用&quot;&gt;日常应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#系统相关&quot;&gt;系统相关&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#软件资源&quot;&gt;软件资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#已停更&quot;&gt;已停更&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#安卓APP&quot;&gt;安卓APP&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#精选应用&quot;&gt;精选应用&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="software" scheme="http://doiyes.com/categories/software/"/>
+    
+    
+      <category term="Software-Favorite" scheme="http://doiyes.com/tags/Software-Favorite/"/>
+    
+      <category term="善用佳软" scheme="http://doiyes.com/tags/%E5%96%84%E7%94%A8%E4%BD%B3%E8%BD%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Firefox配置文件自用收集整理</title>
+    <link href="http://doiyes.com/firefox-custom-doiyes"/>
+    <id>http://doiyes.com/firefox-custom-doiyes</id>
+    <published>2022-02-14T05:37:00.000Z</published>
+    <updated>2022-09-14T01:37:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;下载安装&quot;&gt;&lt;a href=&quot;#下载安装&quot; class=&quot;headerlink&quot; title=&quot;下载安装&quot;&gt;&lt;/a&gt;下载安装&lt;/h3&gt;&lt;p&gt;官方FTP：&lt;a href=&quot;http://archive.mozilla.org/pub/firefox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://archive.mozilla.org/pub/firefox/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官网：&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/all/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.mozilla.org/en-US/firefox/all/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。&lt;/p&gt;
+&lt;p&gt;移动版(第三方iceraven)：&lt;a href=&quot;https://github.com/fork-maintainers/iceraven-browser/releases&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/fork-maintainers/iceraven-browser/releases&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="firefox" scheme="http://doiyes.com/categories/firefox/"/>
+    
+    
+      <category term="Firefox" scheme="http://doiyes.com/tags/Firefox/"/>
+    
+      <category term="uc脚本" scheme="http://doiyes.com/tags/uc%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="油猴脚本" scheme="http://doiyes.com/tags/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020年观影记录</title>
+    <link href="http://doiyes.com/2020-movie-list"/>
+    <id>http://doiyes.com/2020-movie-list</id>
+    <published>2020-02-15T03:35:00.000Z</published>
+    <updated>2025-08-25T00:28:52.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;釜山行 &lt;font color=Blue&gt;[★★★★★推荐]&lt;/font&gt; [2016韩国，类型: 动作 / 惊悚 / 灾难] 一句话介绍/点评：关于人性及一些细节闪光。&lt;/li&gt;
+&lt;li&gt;现世活宝  &lt;font color=Blue&gt;[★★推荐]&lt;/font&gt; [1990中国大陆，类型: 剧情 / 喜剧] 一句话介绍/点评：赵本山早期作品，本山大叔很多小品段子的雏形都在里面。&lt;/li&gt;
+&lt;li&gt;甲方乙方  &lt;font color=Blue&gt;[★★★★推荐]&lt;/font&gt; [1997中国大陆，类型: 喜剧] 一句话介绍/点评：好梦一日游，值得重温。&lt;/li&gt;
+&lt;li&gt;一句顶一万句  &lt;font color=Blue&gt;[★★★推荐]&lt;/font&gt; [2016中国大陆，类型: 剧情 / 爱情 / 家庭] 一句话介绍/点评：经典台词：日子是过以后，不是过以前。。&lt;/li&gt;
+&lt;li&gt;低俗小说  &lt;font color=Blue&gt;[★★★★★推荐]&lt;/font&gt; [1994美国，类型: 剧情 / 喜剧 / 犯罪] 一句话介绍/点评：神奇的1994年，经典的狐步舞。&lt;/li&gt;
+&lt;li&gt;有完没完  &lt;font color=Blue&gt;[★★★推荐]&lt;/font&gt; [2017中国大陆，类型: 剧情 / 喜剧] 一句话介绍/点评：来看范伟的，至于其他人嘛？&lt;/li&gt;
+&lt;li&gt;七宗罪  &lt;font color=Blue&gt;[★★★★★推荐]&lt;/font&gt; [1995美国，类型: 剧情 / 悬疑 / 惊悚 / 犯罪] 一句话介绍/点评：暴食、贪婪、懒惰、嫉妒、骄傲、色欲、愤怒。&lt;/li&gt;
+&lt;li&gt;一声叹息  &lt;font color=Blue&gt;[★★★推荐]&lt;/font&gt; [2000中国大陆，类型:剧情 / 爱情 / 家庭] 一句话介绍/点评：典型性中国式婚外恋。&lt;/li&gt;
+&lt;li&gt;只有芸知道  &lt;font color=Blue&gt;[★★推荐]&lt;/font&gt; [2019中国大陆，类型:剧情 / 爱情] 一句话介绍/点评：真人真事，但没看完。&lt;/li&gt;
+&lt;li&gt;背对背，脸靠脸  &lt;font color=Blue&gt;[★★★★★推荐]&lt;/font&gt; [1994中国大陆，类型: 剧情] 一句话介绍/点评：官场现形记，一则中国社会的政治寓言，强烈推荐如果你能找到资源。
+    
+    </summary>
+    
+    
+      <category term="other" scheme="http://doiyes.com/categories/other/"/>
+    
+    
+      <category term="电影" scheme="http://doiyes.com/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+      <category term="影评" scheme="http://doiyes.com/tags/%E5%BD%B1%E8%AF%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读书记录</title>
+    <link href="http://doiyes.com/readinglist"/>
+    <id>http://doiyes.com/readinglist</id>
+    <published>2020-02-12T02:32:00.000Z</published>
+    <updated>2025-08-25T00:28:52.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;2019年&quot;&gt;&lt;a href=&quot;#2019年&quot; class=&quot;headerlink&quot; title=&quot;-2019年&quot;&gt;&lt;/a&gt;-2019年&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;鱼翅与花椒&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;写在基因里的食谱&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;钱：7步创造终身收入&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;小岛经济学：鱼、美元和经济的故事&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;纸牌大厦：卢瑟经济学之21世纪金融危机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;卢瑟经济学&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="other" scheme="http://doiyes.com/categories/other/"/>
+    
+    
+      <category term="读书" scheme="http://doiyes.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="书单" scheme="http://doiyes.com/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github学习记录</title>
+    <link href="http://doiyes.com/Git-github-learn"/>
+    <id>http://doiyes.com/Git-github-learn</id>
+    <published>2020-02-12T02:12:00.000Z</published>
+    <updated>2025-08-25T00:28:52.802Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;Github学习指南&lt;a href=&quot;https://github.com/jasonim/github-guide&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="github" scheme="http://doiyes.com/categories/github/"/>
+    
+    
+      <category term="git学习" scheme="http://doiyes.com/tags/git%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="github学习" scheme="http://doiyes.com/tags/github%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>锵锵三人行音频分享下载</title>
+    <link href="http://doiyes.com/qiangqiang-share"/>
+    <id>http://doiyes.com/qiangqiang-share</id>
+    <published>2020-02-11T03:32:00.000Z</published>
+    <updated>2025-08-25T00:28:52.803Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;锵锵三人行音频下载&quot;&gt;&lt;a href=&quot;#锵锵三人行音频下载&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="share" scheme="http://doiyes.com/categories/share/"/>
+    
+    
+      <category term="锵锵三人行" scheme="http://doiyes.com/tags/%E9%94%B5%E9%94%B5%E4%B8%89%E4%BA%BA%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码小白在Github使用Hexo搭建个人网站实录</title>
+    <link href="http://doiyes.com/Hexo-deploy-GitHub-Actions-Git"/>
+    <id>http://doiyes.com/Hexo-deploy-GitHub-Actions-Git</id>
+    <published>2020-02-08T05:38:00.000Z</published>
+    <updated>2025-08-25T00:28:52.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经历过折腾各种CMS，买空间续域名之后，慢慢就懒得折腾了，最近的新冠肺炎使得只能憋在家里不能出门，便来尝试一下在GitHub上放一个博客，因为是个代码小白（大学里学了一个学期的Java早就还给老师了，从未接触过Git、Markdown、CI/CD），所以过程还是有些曲折，差不多花了三天时间完成了&lt;strong&gt;hexo搭建、部署及使用GitHub Actions进行hexo自动发布&lt;/strong&gt;，现将相关过程记录如下，以备后查。&lt;/p&gt;
+&lt;h2 id=&quot;hexo搭建及部署&quot;&gt;&lt;a href=&quot;#hexo搭建及部署&quot; class=&quot;headerlink&quot; title=&quot;hexo搭建及部署&quot;&gt;&lt;/a&gt;hexo搭建及部署&lt;/h2&gt;&lt;h3 id=&quot;安装环境&quot;&gt;&lt;a href=&quot;#安装环境&quot; class=&quot;headerlink&quot; title=&quot;安装环境&quot;&gt;&lt;/a&gt;安装环境&lt;/h3&gt;&lt;p&gt;根据Hexo 的官方文档的&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;概述&lt;/a&gt;安装Git和node.js&lt;br&gt;安装Node.js: &lt;a href=&quot;https://nodejs.org/en/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://nodejs.org/en/download/&lt;/a&gt;&lt;br&gt;安装Git: &lt;a href=&quot;https://github.com/waylau/git-for-win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;git国内下载站&lt;/a&gt;&lt;br&gt;具体步骤参照上述官方文档。&lt;/p&gt;
+&lt;h3 id=&quot;安装hexo&quot;&gt;&lt;a href=&quot;#安装hexo&quot; class=&quot;headerlink&quot; title=&quot;安装hexo&quot;&gt;&lt;/a&gt;安装hexo&lt;/h3&gt;&lt;p&gt;使用 npm 安装 Hexo（小白我其实不懂npm什么意思）&lt;br&gt;随便找个文件夹或在桌面右键Git bash here，启动Git，输入命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;建立要存放hexo相关文件的文件夹，如E:\Hexo，在此文件夹下右键Git bash here，输入命令进行初始化hexo：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="http://doiyes.com/categories/GitHub/"/>
+    
+    
+      <category term="github" scheme="http://doiyes.com/tags/github/"/>
+    
+      <category term="GitHub Actions" scheme="http://doiyes.com/tags/GitHub-Actions/"/>
+    
+      <category term="hexo" scheme="http://doiyes.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码小白在Github使用Hexo搭建个人网站实录</title>
+    <link href="http://doiyes.com/setup-Hexo-and-deploy-to-GitHub-with-GitHub-actions"/>
+    <id>http://doiyes.com/setup-Hexo-and-deploy-to-GitHub-with-GitHub-actions</id>
+    <published>2020-02-08T05:37:00.000Z</published>
+    <updated>2025-08-25T00:28:52.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经历过折腾各种CMS，买空间续域名之后，慢慢就懒得折腾了，最近的新冠肺炎使得只能憋在家里不能出门，便来尝试一下在GitHub上放一个博客，因为是个代码小白（大学里学了一个学期的Java早就还给老师了，从未接触过Git、Markdown、CI/CD），所以过程还是有些曲折，差不多花了三天时间完成了&lt;strong&gt;hexo搭建、部署及使用GitHub Actions进行hexo自动发布&lt;/strong&gt;，现将相关过程记录如下，以备后查。&lt;/p&gt;
+&lt;h2 id=&quot;hexo搭建及部署&quot;&gt;&lt;a href=&quot;#hexo搭建及部署&quot; class=&quot;headerlink&quot; title=&quot;hexo搭建及部署&quot;&gt;&lt;/a&gt;hexo搭建及部署&lt;/h2&gt;&lt;h3 id=&quot;安装环境&quot;&gt;&lt;a href=&quot;#安装环境&quot; class=&quot;headerlink&quot; title=&quot;安装环境&quot;&gt;&lt;/a&gt;安装环境&lt;/h3&gt;&lt;p&gt;根据Hexo 的官方文档的&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;概述&lt;/a&gt;安装Git和node.js&lt;br&gt;安装Node.js: &lt;a href=&quot;https://nodejs.org/en/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://nodejs.org/en/download/&lt;/a&gt;&lt;br&gt;安装Git: &lt;a href=&quot;https://github.com/waylau/git-for-win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;git国内下载站&lt;/a&gt;&lt;br&gt;具体步骤参照上述官方文档。&lt;/p&gt;
+&lt;h3 id=&quot;安装hexo&quot;&gt;&lt;a href=&quot;#安装hexo&quot; class=&quot;headerlink&quot; title=&quot;安装hexo&quot;&gt;&lt;/a&gt;安装hexo&lt;/h3&gt;&lt;p&gt;使用 npm 安装 Hexo（小白我其实不懂npm什么意思）&lt;br&gt;随便找个文件夹或在桌面右键Git bash here，启动Git，输入命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;建立要存放hexo相关文件的文件夹，如E:\Hexo，在此文件夹下右键Git bash here，输入命令进行初始化hexo：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="http://doiyes.com/categories/GitHub/"/>
+    
+    
+      <category term="github" scheme="http://doiyes.com/tags/github/"/>
+    
+      <category term="GitHub Actions" scheme="http://doiyes.com/tags/GitHub-Actions/"/>
+    
+      <category term="hexo" scheme="http://doiyes.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://doiyes.com/hello-world"/>
+    <id>http://doiyes.com/hello-world</id>
+    <published>2020-02-06T09:06:16.000Z</published>
+    <updated>2025-08-25T00:28:52.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="http://doiyes.com/categories/GitHub/"/>
+    
+    
+      <category term="github" scheme="http://doiyes.com/tags/github/"/>
+    
+      <category term="hexo" scheme="http://doiyes.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
